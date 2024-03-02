@@ -72,7 +72,7 @@ export default function App() {
       {/* <IgStories /> */}
 
       {allStories.map((story, index) => (
-        <AnimatedPage pageColor={'black'} pageIndex={pageIndex} index={index}>
+        <AnimatedPage pageColor={'black'} pageIndex={pageIndex} index={index} key={story.userId}>
           <Image
             source={{ uri: story.uri }}
             style={{ width: '100%', height: '100%' }}
