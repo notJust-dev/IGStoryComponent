@@ -45,7 +45,7 @@ export default function IgStories() {
     setStoryIndex((index) => {
       if (index === 0) {
         goToPrevUser();
-        return 0;
+         return usersStories[userIndex - 1].stories.length - 1;
       }
       return index - 1;
     });
